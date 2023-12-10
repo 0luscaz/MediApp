@@ -1,0 +1,51 @@
+<ion-menu side="end" contentId="main-content">
+  <ion-header class="titulo_menu"> ඞ </ion-header>
+</ion-menu>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-menu-button class="menu" autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <ion-icon class="mais" name="fitness"></ion-icon>
+      MediApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="main-content" class="ion-padding">
+  <ion-card color="light" class="dosagem-card">
+    <ion-card-header class="dosagemnome">
+      Pesquisar Medicamento: 
+    </ion-card-header>
+    <ion-card-content>
+      <ion-searchbar></ion-searchbar>
+
+      <ion-button class="dados" routerLink="/create">Dados de Saúde: </ion-button>
+
+      <ion-button class="historico" (click)="getUser()">
+        Histórico
+      </ion-button>
+
+      <ion-list *ngIf="mostrarHistorico">
+        <ion-list>
+          <ion-item class="header-row">
+            <ion-label class="col-label">Deficiência Física</ion-label>
+            <ion-label class="col-label">Qual?</ion-label>
+            <ion-label class="col-label">Doença Pulmonar</ion-label>
+            <ion-label class="col-label">Confirmou</ion-label>
+            <ion-label class="col-label">Kg</ion-label>
+          </ion-item>
+        </ion-list>
+        <ion-item *ngFor="let user of users">
+          <ion-label class="col-label">{{ user.Df }}</ion-label>
+          <ion-label class="col-label">{{ user.Df2 }}</ion-label>
+          <ion-label class="col-label">{{ user.Dp }}</ion-label>
+          <ion-label class="col-label">{{ user.Ce }}</ion-label>
+          <ion-label class="col-label">{{ user.Kg }}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>    

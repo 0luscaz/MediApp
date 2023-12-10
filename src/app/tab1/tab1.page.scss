@@ -1,0 +1,85 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+ion-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ion-title {
+  text-align: center;
+  width: 100%;
+  margin-right: 100px;
+  font-size: 30px;
+}
+ion-icon {
+  font-size: 30px; 
+  color: #ffffff; 
+
+}
+.titulo_menu{
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 25px;
+}
+.mais{
+  color: #2b2b2b;
+}
+.menu{
+  font-size: 35px;
+}
+.dosagem-card {
+  height: 120vh; 
+  max-width: 50vw; 
+  margin: auto; 
+}
+
+.dosagem-card ion-item ion-input {
+  max-width: 60%;
+  width: auto;
+}
+
+.dosagem-card ion-item ion-input.peso-input {
+  max-width: 40%;
+  width: auto;
+}
+
+.dosagem-card ion-item {
+  display: flex;
+  align-items: center;
+}
+
+.dosagem-card ion-item .informe-peso-label {
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.dosagem-card ion-item .kg-label {
+  margin-left: 5px;
+}
+
+.dosagem-card ion-button {
+  margin-top: 10px;
+}
+
+.spacer {
+  height: 20px; 
+}
+
+.dosagemnome{
+  font-size: 20px;
+
+}
+.pesoinput{
+  margin-left: 30px;
+}
+.col-label {
+  width: 20%; 
+  font-size: 14px; 
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

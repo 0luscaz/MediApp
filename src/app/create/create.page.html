@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="fitness"></ion-icon>
+      Dados de Saúde 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+      <ion-label>Possui alguma deficiência física? </ion-label>
+      <ion-input [(ngModel)]="formData.Df"></ion-input>
+    </ion-list>
+    <ion-list>
+      <ion-label>Se sim, qual? </ion-label>
+      <ion-input [(ngModel)]="formData.Df2"></ion-input>
+    </ion-list>
+    <ion-list>
+      <ion-label>Contraiu alguma doença pulmonar nos últimos 15 dias? </ion-label>
+      <ion-input [(ngModel)]="formData.Dp"></ion-input>
+    </ion-list>
+    <ion-list>
+      <ion-label>Um médico já confirmou sua enfermidade? </ion-label>
+      <ion-input [(ngModel)]="formData.Ce"></ion-input>
+    </ion-list>
+    <ion-list>
+      <ion-label>Informe seu peso (Kg): </ion-label>
+      <ion-input [(ngModel)]="formData.Kg"></ion-input>
+    </ion-list>
+    <ion-button expand="full" (click)="create()">Adicionar Dados</ion-button>
+</ion-content>
